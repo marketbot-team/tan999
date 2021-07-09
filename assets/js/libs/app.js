@@ -12,7 +12,7 @@ $(document).ready(function(){
       }, 500);
     });
 
-    $("#navigation").scrollspy({offset: - 88});
+    $("#navigation").scrollspy({offset: - 150});
 
     $("#burger").click(function(event){
       $("#burger, .navigation, .icon-bar").toggleClass('toogle-active');
