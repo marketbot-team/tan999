@@ -431,7 +431,7 @@ text-decoration: none;
 
 .section-aboutme {
 	padding: 50px 0 70px 0;
-	background: #121212 url('/assets/img/aboutme-bg.png') no-repeat center center/cover;
+	background: #121212 url('./assets/img/aboutme-bg.png') no-repeat center center/cover;
 }
 
 .aboutme-inner {
