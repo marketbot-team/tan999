@@ -1131,7 +1131,7 @@ text-decoration: none;
 
 }
 
-@media (min-width: 767px) and (orientation: landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
 	.icon-bar {
 		display: none;
 	}
