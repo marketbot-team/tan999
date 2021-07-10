@@ -1,33 +1,40 @@
 $(document).ready(function(){
-    $('.venobox').venobox({
-        border: '5px',
-        bgcolor: '#FEE600',
-        spinColor: '#FEE600',
-    });
+  $('.venobox').venobox({
+    border: '5px',
+    bgcolor: '#FEE600',
+    spinColor: '#FEE600',
+  });
 
-    $('a[href^="#"]').click(function() {
-      var target = $(this).attr('href');
-      $('html, body').animate({
-        scrollTop: $(target).offset().top - 80
-      }, 500);
-    });
+  $('a[href^="#"]').click(function() {
+    var target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(target).offset().top - 80
+    }, 500);
+  });
 
-    $("#navigation").scrollspy({offset: - 150});
+  $("#navigation").scrollspy({offset: - 150});
 
-    $("#burger").click(function(event){
-      $("#burger, .navigation, .icon-bar").toggleClass('toogle-active');
-      $("body").toggleClass('lock');
+  $("#burger").click(function(event){
+    $("#burger, .navigation, .icon-bar").toggleClass('toogle-active');
+    $("body").toggleClass('lock');
 
-     
-    });
 
-    $('.nav-link').click(function(event) {
-      $("#burger, .navigation, .icon-bar").removeClass('toogle-active');
-      $("body").removeClass('lock');
-    });
+  });
+
+  $('.nav-link').click(function(event) {
+    $("#burger, .navigation, .icon-bar").removeClass('toogle-active');
+    $("body").removeClass('lock');
+  });
 
 });
 
+  // Hide call me
+  $('#message-btn').click(function(event) {
+    event.preventDefault();
+    $('.icon-bar').slideToggle('fast', 'linear');
+    $('#message-btn').toggleClass('active');
+    $('.message').toggleClass('active');
+  });
 
 AOS.init({// Global settings:
   disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
